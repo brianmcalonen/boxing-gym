@@ -1,0 +1,76 @@
+.section-about {
+  background-color: $color-paper;
+  padding: 15rem 0 25rem 0;
+  margin-top: -10vh;
+
+  @include respond(tab-port) {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    margin-top: -10vh;
+    padding-bottom: 40rem;
+    margin-bottom: 20rem;
+    padding-top: 10rem;
+  }
+}
+
+.section-features {
+  margin-top: -20rem;
+  padding: 25rem 0 20rem 0;
+  background-image:
+    linear-gradient(to right bottom,
+      rgba($color-primary, .75),
+      rgba($color-primary-dark, .75)),
+    url(../img/box-5.jpg);
+    background-size: cover;
+    clip-path: polygon(0 0, 50% 10%, 100% 0, 100% 90%, 50% 100%, 0 90%);
+
+    @include respond(tab-port) {
+      clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+      margin-top: -30rem;
+      padding: 15rem 0 20rem 0;
+      background-image:
+        linear-gradient(to top,
+          rgba($color-primary-light, .75),
+          rgba($color-primary-dark, .75)),
+        url(../img/box-5.jpg);
+
+    }
+
+}
+
+.section-memberships {
+  margin-top: -20rem;
+  background-color: $color-paper;
+  padding: 30rem 0 15rem 0;
+
+  @include respond(tab-port) {
+    padding-bottom: 20rem;
+  }
+}
+
+.section-instructors {
+  padding: 25rem 0 5rem 0;
+  position: relative;
+  clip-path: polygon(0 0, 50% 6%, 100% 0, 100% 94%, 50% 100%, 0 94%);
+  z-index: 2;
+
+  @include respond(tab-port) {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    padding: 10rem 0 5rem 0;
+    margin-top: 10rem;
+  }
+
+}
+
+.section-book {
+    margin-top: -30rem;
+    padding: 45rem 0 30rem 0;
+    background-image: linear-gradient(to right bottom, $color-primary-light, $color-primary-dark);
+    clip-path: polygon(0 0, 100% 0, 100% 93%, 50% 100%, 0 93%);
+
+      @include respond(tab-port) {
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+        padding: 45rem 0 15rem 0;
+
+      }
+
+}

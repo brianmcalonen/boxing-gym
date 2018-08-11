@@ -1,0 +1,58 @@
+.feature-box {
+  background-color: rgba($color-white, .8);
+  font-size: 1.5rem;
+  // padding: 2.5rem;
+  text-align: center;
+  border-radius: 3px;
+  box-shadow: 0 2rem 5rem rgba($color-black, .2);
+  transition: all .2s;
+
+  @include respond(tab-port) {
+    padding: 1.5rem;
+    font-size: 2rem;
+
+  }
+
+  &:hover {
+    transform: translateY(-1rem) scale(1.02);
+  }
+
+  &__picture {
+      background-size: cover;
+      height: 23rem;
+      background-blend-mode: soft-light;
+      -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+      clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+      border-top-left-radius: 3px;
+      border-top-right-radius: 3px;
+      margin-bottom: 1rem;
+
+      &--1 {
+        background-image: linear-gradient(to right bottom, $color-silver-light, $color-silver-dark),
+        url(../img/box-24.jpg);
+      }
+
+      &--2 {
+        background-image: linear-gradient(to right bottom, $color-silver-light, $color-silver-dark),
+        url(../img/box-22.jpg);
+      }
+
+      &--3 {
+        background-image: linear-gradient(to right bottom, $color-silver-light, $color-silver-dark),
+        url(../img/box-18.jpg);
+      }
+
+      &--4 {
+        background-image: linear-gradient(to right bottom, $color-silver-light, $color-silver-dark),
+        url(../img/box-17.jpg);
+      }
+
+  }
+
+  &__text {
+    padding:  0 2.5rem 2.5rem 2.5rem;
+  }
+
+
+
+}

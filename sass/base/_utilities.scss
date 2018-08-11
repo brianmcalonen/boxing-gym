@@ -1,0 +1,25 @@
+// TEXT CENTER
+.u-center-text {
+  text-align: center !important;
+}
+
+// BOTTOM MARGINS
+.u-margin-bottom-small {
+  margin-bottom: 1.5rem !important;
+}
+
+.u-margin-bottom-medium {
+  margin-bottom: 4rem;
+
+  @include respond(tab-port) {
+    margin-bottom: 3rem !important;
+  }
+}
+
+.u-margin-bottom-large {
+  margin-bottom: 8rem;
+
+  @include respond(tab-port) {
+    margin-bottom: 5rem !important;
+  }
+}
