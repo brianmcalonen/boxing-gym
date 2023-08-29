@@ -1,423 +1,530 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-        <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900"
+      rel="stylesheet"
+    />
 
-        <link rel="stylesheet" href="css/icon-font.css">
-        <link rel="stylesheet" href="css/style.css">
-        <!-- <link rel="shortcut icon" type="image/png" href="img/favicon.png"> -->
+    <link rel="stylesheet" href="css/icon-font.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- <link rel="shortcut icon" type="image/png" href="img/favicon.png"> -->
 
-        <title>MMA GYM</title>
-    </head>
-    <body>
+    <title>King's Gym</title>
+  </head>
+  <body>
+    <div class="navigation">
+      <input type="checkbox" class="navigation__checkbox" id="navi-toggle" />
 
-      <div class="navigation">
-        <input type="checkbox" class="navigation__checkbox" id="navi-toggle">
+      <label for="navi-toggle" class="navigation__button">
+        <span class="navigation__icon">&nbsp;</span>
+      </label>
 
-        <label for="navi-toggle" class="navigation__button">
-          <span class="navigation__icon">&nbsp;</span>
-        </label>
+      <div class="navigation__background">&nbsp;</div>
 
-        <div class="navigation__background">&nbsp;</div>
-
-        <nav class="navigation__nav">
-          <ul class="navigation__list">
-            <li class="navigation__item"><a href="#section-about" class="navigation__link">About King's</a></li>
-            <li class="navigation__item"><a href="#section-classes" class="navigation__link">Classes</a></li>
-            <li class="navigation__item"><a href="#section-membership" class="navigation__link">Memberships</a></li>
-            <li class="navigation__item"><a href="#section-instructors" class="navigation__link">Coaches</a></li>
-            <li class="navigation__item"><a href="#section-contact" class="navigation__link">Contact</a></li>
-          </ul>
-        </nav>
+      <nav class="navigation__nav">
+        <ul class="navigation__list">
+          <li class="navigation__item">
+            <a href="#section-about" class="navigation__link">About King's</a>
+          </li>
+          <li class="navigation__item">
+            <a href="#section-classes" class="navigation__link">Classes</a>
+          </li>
+          <li class="navigation__item">
+            <a href="#section-membership" class="navigation__link"
+              >Memberships</a
+            >
+          </li>
+          <li class="navigation__item">
+            <a href="#section-instructors" class="navigation__link">Coaches</a>
+          </li>
+          <li class="navigation__item">
+            <a href="#section-contact" class="navigation__link">Contact</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <header class="header" id="section-header">
+      <div class="header__logo-box">
+        <img src="img/logo-white.png" alt="Logo" class="header__logo" />
       </div>
-      <header class="header" id="section-header">
-        <div class="header__logo-box">
-          <img src="img/logo-white.png" alt="Logo" class="header__logo">
+
+      <div class="header__text-box">
+        <h1 class="heading-primary">
+          <span class="heading-primary--main"> King's Gym </span>
+          <span class="heading-primary--sub"> We win at life </span>
+        </h1>
+
+        <a href="#section-about" class="btn btn--white btn--animated"
+          >Join Now</a
+        >
+      </div>
+    </header>
+
+    <main>
+      <section class="section-about" id="section-about">
+        <div class="u-center-text u-margin-bottom-large">
+          <h2 class="heading-secondary">Train to be the best</h2>
         </div>
-
-        <div class="header__text-box">
-          <h1 class="heading-primary">
-            <span class="heading-primary--main">
-              King's Gym
-            </span>
-            <span class="heading-primary--sub">
-              We win at life
-            </span>
-          </h1>
-
-          <a href="#section-about" class="btn btn--white btn--animated">Join Now</a>
-        </div>
-      </header>
-
-      <main>
-        <section class="section-about"  id="section-about">
-          <div class="u-center-text u-margin-bottom-large">
-            <h2 class="heading-secondary">
-              Train to be the best
-            </h2>
-          </div>
-
-          <div class="row">
-            <div class="col-1-of-2">
-              <h3 class="heading-tertiary u-margin-bottom-small">
-                Get in the best shape of your life
-              </h3>
-              <p class="paragraph">
-              Swing run batted in stretch pinch hit rhubarb, pinch hit starter. Pinch hitter cy young perfect game small ball rhubarb.</p>
-              <h3 class="heading-tertiary u-margin-bottom-small">
-                Learn the sweet science
-              </h3>
-              <p class="paragraph">
-                Sacrifice fly second base interleague force visitors triple-A outs breaking ball foul line. At-bat team cellar reds slugging steal rally.
-              </p>
-              <a href="#section-classes" class="btn-text">Learn more &rarr;</a>
-            </div>
-
-            <div class="col-1-of-2">
-              <div class="gallery">
-                <img src="img/box-6.jpg" alt="" class="gallery__photo gallery__photo--img1">
-                <img src="img/box-1.jpeg" alt="" class="gallery__photo gallery__photo--img2">
-                <img src="img/box-2.jpeg" alt="" class="gallery__photo gallery__photo--img3">
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <section class="section-features"  id="section-classes">
-
-          <div class="row">
-            <div class="col-1-of-4">
-              <div class="feature-box">
-                <div class="feature-box__picture feature-box__picture--1">
-                    &nbsp;
-                </div>
-
-                <h3 class="heading-tertiary u-margin-bottom-small">Open Gym</h3>
-                <p class="feature-box__text">
-                  Utilize all of our equipment on your own time. Coaching is not provided.
-                </p>
-              </div>
-            </div>
-
-            <div class="col-1-of-4">
-              <div class="feature-box">
-                <div class="feature-box__picture feature-box__picture--2">
-                    &nbsp;
-                </div>
-
-                <h3 class="heading-tertiary u-margin-bottom-small">Group Classes</h3>
-                <p class="feature-box__text">
-                  Develop overall fitness and boxing skills with interactive group workouts.
-                </p>
-              </div>
-            </div>
-
-
-            <div class="col-1-of-4">
-              <div class="feature-box">
-                <div class="feature-box__picture feature-box__picture--3">
-                    &nbsp;
-                </div>
-
-                <h3 class="heading-tertiary u-margin-bottom-small">Private Lessons</h3>
-                <p class="feature-box__text">
-                  Learn the sweet science one-on-one with our professional trainers.
-                </p>
-              </div>
-            </div>
-
-            <div class="col-1-of-4">
-              <div class="feature-box">
-                <div class="feature-box__picture feature-box__picture--4">
-                    &nbsp;
-                </div>
-
-                <h3 class="heading-tertiary u-margin-bottom-small">Youth League</h3>
-                <p class="feature-box__text">
-                  Competition training for our youth, focusing on the fundamentals of boxing.
-                </p>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <section class="section-membership" id="section-membership">
-                <div class="u-center-text u-margin-bottom-large">
-                    <!-- <h2 class="heading-secondary">
-                        Gym Memberships
-                    </h2> -->
-                </div>
-
-                <div class="row">
-                    <div class="col-1-of-3">
-                       <div class="card">
-                           <div class="card__side card__side--front">
-                                <div class="card__picture card__picture--1">
-                                    &nbsp;
-                                </div>
-                                <h4 class="card__heading">
-                                    <span class="card__heading-span card__heading-span--1"> Bronze Package</span>
-                                </h4>
-                                <div class="card__details">
-                                    <ul>
-                                        <li>24/7 Access</li>
-                                        <li>Nutrition Coaching</li>
-                                        <li>Enjoy up to 4 Group Classes per week</li>
-                                    </ul>
-                                </div>
-                           </div>
-                           <div class="card__side card__side--back card__side--back-1">
-                                <div class="card__cta">
-                                    <div class="card__price-box">
-                                        <p class="card__price-only">Only</p>
-                                        <p class="card__price-value">$67</p>
-                                        <p class="card__price-only">Per Month</p>
-
-                                    </div>
-                                    <a href="#popup" class="btn btn--white">Join now!</a>
-                                </div>
-                            </div>
-                       </div>
-                    </div>
-
-
-                    <div class="col-1-of-3">
-                        <div class="card">
-                            <div class="card__side card__side--front">
-                                <div class="card__picture card__picture--2">
-                                    &nbsp;
-                                </div>
-                                <h4 class="card__heading">
-                                    <span class="card__heading-span card__heading-span--2">Silver Package</span>
-                                </h4>
-                                <div class="card__details">
-                                    <ul>
-                                        <li>24/7 Access</li>
-                                        <li>Unlimited Classes</li>
-                                        <li>Nutrition Coaching</li>
-                                        <li>2 hours of One-on-One coaching per month</li>
-                                    </ul>
-                                </div>
-
-                            </div>
-                            <div class="card__side card__side--back card__side--back-2">
-                                <div class="card__cta">
-                                    <div class="card__price-box">
-                                        <p class="card__price-only">Only</p>
-                                        <p class="card__price-value">$107</p>
-                                        <p class="card__price-only">Per Month</p>
-
-                                    </div>
-                                    <a href="#popup" class="btn btn--white">Join now!</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-
-                    <div class="col-1-of-3">
-                        <div class="card">
-                            <div class="card__side card__side--front">
-                                <div class="card__picture card__picture--3">
-                                    &nbsp;
-                                </div>
-                                <h4 class="card__heading">
-                                    <span class="card__heading-span card__heading-span--3">Gold Package</span>
-                                </h4>
-                                <div class="card__details">
-                                    <ul>
-                                        <li>24/7 Access</li>
-                                        <li>Unlimited Classes</li>
-                                        <li>Nutrition Coaching</li>
-                                        <li>4 hours of One-on-One coaching per month</li>
-                                    </ul>
-                                </div>
-
-                            </div>
-                            <div class="card__side card__side--back card__side--back-3">
-                                <div class="card__cta">
-                                    <div class="card__price-box">
-                                        <p class="card__price-only">Only</p>
-                                        <p class="card__price-value">$137</p>
-                                        <p class="card__price-only">Per Month</p>
-
-                                    </div>
-                                    <a href="#popup" class="btn btn--white">Join now!</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="u-center-text u-margin-top-huge">
-                    <a href="#" class="btn btn--red">Membership info</a>
-                </div>
-            </section>
-
-            <section class="section-instructors"  id="section-instructors">
-              <div class="bg-video">
-                <video class="bg-video__content" autoplay muted loop>
-                  <source src="img/boxing-video.mp4" type="video/mp4">
-                </video>
-              </div>
-
-              <div class="u-center-text u-margin-bottom-large">
-                  <h2 class="heading-secondary">
-                      Meet our coaches
-                  </h2>
-              </div>
-
-              <div class="row">
-                <div class="instructors u-margin-bottom-large">
-                  <!-- Use 'figure' for when you have an image and a caption -->
-                  <figure class="instructors__shape">
-                    <img src="img/box-12.jpg" alt="coach" class="instructors__image">
-                    <figcaption class="instructors__caption">Are you ready?</figcaption>
-                  </figure>
-                  <div class="instructors__text">
-                    <h3 class="heading-tertiary u-margin-bottom-small">Daniel Johnson</h3>
-                  </div>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                </div>
-              </div>
-
-              <div class="row">
-                <div class="instructors u-margin-bottom-large">
-                  <figure class="instructors__shape">
-                    <img src="img/box-13.jpg" alt="coach" class="instructors__image">
-                    <figcaption class="instructors__caption">Practice beats talent</figcaption>
-                  </figure>
-                  <div class="instructors__text">
-                    <h3 class="heading-tertiary u-margin-bottom-small">Jack MacDonald</h3>
-                  </div>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                </div>
-              </div>
-
-              <div class="row">
-                <div class="instructors u-margin-bottom-large">
-                  <figure class="instructors__shape">
-                    <img src="img/box-11.jpg" alt="coach" class="instructors__image">
-                    <figcaption class="instructors__caption">Hard work everyday</figcaption>
-                  </figure>
-                  <div class="instructors__text">
-                    <h3 class="heading-tertiary u-margin-bottom-small">Daniel Johnson</h3>
-                  </div>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                </div>
-              </div>
-
-              <div class="u-center-text u-margin-bottom-large">
-                <a href="#" class="btn btn--white">Meet the Coaches &rarr;</a>
-              </div>
-            </section>
-
-            <section class="section-book" id="section-free">
-               <div class="row">
-                   <div class="book">
-                       <div class="book__form">
-                           <form action="#" class="form">
-                               <div class="u-margin-bottom-medium">
-                                   <h2 class="heading-secondary">
-                                       Start Your Free Trial
-                                   </h2>
-                               </div>
-
-                               <div class="form__group">
-                                   <input type="text" class="form__input" placeholder="Full name" id="name" required>
-                                   <label for="name" class="form__label">Full name</label>
-                               </div>
-
-                               <div class="form__group">
-                                   <input type="email" class="form__input" placeholder="Email address" id="email" required>
-                                   <label for="email" class="form__label">Email address</label>
-                               </div>
-
-                               <div class="form__group ">
-                                   <div class="form__radio-group">
-                                       <input type="radio" class="form__radio-input" id="small" name="size">
-                                       <label for="small" class="form__radio-label">
-                                           <span class="form__radio-button"></span>
-                                           Beginner Level
-                                       </label>
-                                   </div>
-
-                                   <div class="form__radio-group">
-                                       <input type="radio" class="form__radio-input" id="large" name="size">
-                                       <label for="large" class="form__radio-label">
-                                           <span class="form__radio-button"></span>
-                                           Advanced Level
-                                       </label>
-                                   </div>
-                               </div>
-
-                               <div class="form__group">
-                                   <button class="btn btn--red">Next step &rarr;</button>
-                               </div>
-                           </form>
-                       </div>
-                   </div>
-               </div>
-           </section>
-
-      </main>
-
-      <footer class="footer" id="section-contact">
-        <!-- <div class="footer__logo-box">
-          <img src="img/logo-white.png" alt="gym logo" class="footer__logo">
-        </div> -->
 
         <div class="row">
           <div class="col-1-of-2">
-            <div class="footer__info-box">
-              <h2 class="heading-secondary u-margin-bottom-large">
-                  Come visit us soon!!!
-              </h2>
-
-              <p class="footer__info">
-                ADDRESS: 555 Broadway Avenue, Oakland, CA
-              </p>
-              <p class="footer__info">
-                PHONE: (510) 555-5555
-              </p>
-              <p class="footer__info">
-                HOURS: 10am - 10pm everyday
-              </p>
-            </div>
-
-
-            <div class="footer__navigation">
-              <ul class="footer__list">
-                <li class="footer__item">
-                  <a href="#section-header" class="footer__link">Home</a>
-                </li>
-                <li class="footer__item">
-                  <a href="#section-classes" class="footer__link">classes</a>
-                </li>
-                <li class="footer__item">
-                  <a href="#section-membership" class="footer__link">Memberships</a>
-                </li>
-                <li class="footer__item">
-                  <a href="#section-free" class="footer__link">Free Trial</a>
-                </li>
-                <li class="footer__item">
-                  <a href="#section-contact" class="footer__link">Contact</a>
-                </li>
-              </ul>
-            </div>
+            <h3 class="heading-tertiary u-margin-bottom-small">
+              Get in the best shape of your life
+            </h3>
+            <p class="paragraph">
+              Swing run batted in stretch pinch hit rhubarb, pinch hit starter.
+              Pinch hitter cy young perfect game small ball rhubarb.
+            </p>
+            <h3 class="heading-tertiary u-margin-bottom-small">
+              Learn the sweet science
+            </h3>
+            <p class="paragraph">
+              Sacrifice fly second base interleague force visitors triple-A outs
+              breaking ball foul line. At-bat team cellar reds slugging steal
+              rally.
+            </p>
+            <a href="#section-classes" class="btn-text">Learn more &rarr;</a>
           </div>
+
           <div class="col-1-of-2">
-            <div class="footer__map">
-              <div class="mapouter"><div class="gmap_canvas"><iframe width="400" height="400" id="gmap_canvas" src="https://maps.google.com/maps?q=oakland&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://www.maps-erstellen.de">maps-erstellen.de</a></div><style>.mapouter{text-align:right;height:400px;width:400px;}.gmap_canvas {overflow:hidden;background:none!important;height:400px;width:400px;}</style></div>
+            <div class="gallery">
+              <img
+                src="img/box-6.jpg"
+                alt=""
+                class="gallery__photo gallery__photo--img1"
+              />
+              <img
+                src="img/box-1.jpeg"
+                alt=""
+                class="gallery__photo gallery__photo--img2"
+              />
+              <img
+                src="img/box-2.jpeg"
+                alt=""
+                class="gallery__photo gallery__photo--img3"
+              />
             </div>
           </div>
         </div>
-      </footer>
+      </section>
 
-      <!-- <section class="grid-test">
+      <section class="section-features" id="section-classes">
+        <div class="row">
+          <div class="col-1-of-4">
+            <div class="feature-box">
+              <div class="feature-box__picture feature-box__picture--1">
+                &nbsp;
+              </div>
+
+              <h3 class="heading-tertiary u-margin-bottom-small">Open Gym</h3>
+              <p class="feature-box__text">
+                Utilize all of our equipment on your own time. Coaching is not
+                provided.
+              </p>
+            </div>
+          </div>
+
+          <div class="col-1-of-4">
+            <div class="feature-box">
+              <div class="feature-box__picture feature-box__picture--2">
+                &nbsp;
+              </div>
+
+              <h3 class="heading-tertiary u-margin-bottom-small">
+                Group Classes
+              </h3>
+              <p class="feature-box__text">
+                Develop overall fitness and boxing skills with interactive group
+                workouts.
+              </p>
+            </div>
+          </div>
+
+          <div class="col-1-of-4">
+            <div class="feature-box">
+              <div class="feature-box__picture feature-box__picture--3">
+                &nbsp;
+              </div>
+
+              <h3 class="heading-tertiary u-margin-bottom-small">
+                Private Lessons
+              </h3>
+              <p class="feature-box__text">
+                Learn the sweet science one-on-one with our professional
+                trainers.
+              </p>
+            </div>
+          </div>
+
+          <div class="col-1-of-4">
+            <div class="feature-box">
+              <div class="feature-box__picture feature-box__picture--4">
+                &nbsp;
+              </div>
+
+              <h3 class="heading-tertiary u-margin-bottom-small">
+                Youth League
+              </h3>
+              <p class="feature-box__text">
+                Competition training for our youth, focusing on the fundamentals
+                of boxing.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-membership" id="section-membership">
+        <div class="u-center-text u-margin-bottom-large">
+          <!-- <h2 class="heading-secondary">
+                        Gym Memberships
+                    </h2> -->
+        </div>
+
+        <div class="row">
+          <div class="col-1-of-3">
+            <div class="card">
+              <div class="card__side card__side--front">
+                <div class="card__picture card__picture--1">&nbsp;</div>
+                <h4 class="card__heading">
+                  <span class="card__heading-span card__heading-span--1">
+                    Bronze Package</span
+                  >
+                </h4>
+                <div class="card__details">
+                  <ul>
+                    <li>24/7 Access</li>
+                    <li>Nutrition Coaching</li>
+                    <li>Enjoy up to 4 Group Classes per week</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="card__side card__side--back card__side--back-1">
+                <div class="card__cta">
+                  <div class="card__price-box">
+                    <p class="card__price-only">Only</p>
+                    <p class="card__price-value">$67</p>
+                    <p class="card__price-only">Per Month</p>
+                  </div>
+                  <a href="#popup" class="btn btn--white">Join now!</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-1-of-3">
+            <div class="card">
+              <div class="card__side card__side--front">
+                <div class="card__picture card__picture--2">&nbsp;</div>
+                <h4 class="card__heading">
+                  <span class="card__heading-span card__heading-span--2"
+                    >Silver Package</span
+                  >
+                </h4>
+                <div class="card__details">
+                  <ul>
+                    <li>24/7 Access</li>
+                    <li>Unlimited Classes</li>
+                    <li>Nutrition Coaching</li>
+                    <li>2 hours of One-on-One coaching per month</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="card__side card__side--back card__side--back-2">
+                <div class="card__cta">
+                  <div class="card__price-box">
+                    <p class="card__price-only">Only</p>
+                    <p class="card__price-value">$107</p>
+                    <p class="card__price-only">Per Month</p>
+                  </div>
+                  <a href="#popup" class="btn btn--white">Join now!</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-1-of-3">
+            <div class="card">
+              <div class="card__side card__side--front">
+                <div class="card__picture card__picture--3">&nbsp;</div>
+                <h4 class="card__heading">
+                  <span class="card__heading-span card__heading-span--3"
+                    >Gold Package</span
+                  >
+                </h4>
+                <div class="card__details">
+                  <ul>
+                    <li>24/7 Access</li>
+                    <li>Unlimited Classes</li>
+                    <li>Nutrition Coaching</li>
+                    <li>4 hours of One-on-One coaching per month</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="card__side card__side--back card__side--back-3">
+                <div class="card__cta">
+                  <div class="card__price-box">
+                    <p class="card__price-only">Only</p>
+                    <p class="card__price-value">$137</p>
+                    <p class="card__price-only">Per Month</p>
+                  </div>
+                  <a href="#popup" class="btn btn--white">Join now!</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="u-center-text u-margin-top-huge">
+          <a href="#" class="btn btn--red">Membership info</a>
+        </div>
+      </section>
+
+      <section class="section-instructors" id="section-instructors">
+        <div class="bg-video">
+          <video class="bg-video__content" autoplay muted loop>
+            <source src="img/boxing-video.mp4" type="video/mp4" />
+          </video>
+        </div>
+
+        <div class="u-center-text u-margin-bottom-large">
+          <h2 class="heading-secondary">Meet our coaches</h2>
+        </div>
+
+        <div class="row">
+          <div class="instructors u-margin-bottom-large">
+            <!-- Use 'figure' for when you have an image and a caption -->
+            <figure class="instructors__shape">
+              <img
+                src="img/box-12.jpg"
+                alt="coach"
+                class="instructors__image"
+              />
+              <figcaption class="instructors__caption">
+                Are you ready?
+              </figcaption>
+            </figure>
+            <div class="instructors__text">
+              <h3 class="heading-tertiary u-margin-bottom-small">
+                Daniel Johnson
+              </h3>
+            </div>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat.
+            </p>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="instructors u-margin-bottom-large">
+            <figure class="instructors__shape">
+              <img
+                src="img/box-13.jpg"
+                alt="coach"
+                class="instructors__image"
+              />
+              <figcaption class="instructors__caption">
+                Practice beats talent
+              </figcaption>
+            </figure>
+            <div class="instructors__text">
+              <h3 class="heading-tertiary u-margin-bottom-small">
+                Jack MacDonald
+              </h3>
+            </div>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat.
+            </p>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="instructors u-margin-bottom-large">
+            <figure class="instructors__shape">
+              <img
+                src="img/box-11.jpg"
+                alt="coach"
+                class="instructors__image"
+              />
+              <figcaption class="instructors__caption">
+                Hard work everyday
+              </figcaption>
+            </figure>
+            <div class="instructors__text">
+              <h3 class="heading-tertiary u-margin-bottom-small">
+                Daniel Johnson
+              </h3>
+            </div>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat.
+            </p>
+          </div>
+        </div>
+
+        <div class="u-center-text u-margin-bottom-large">
+          <a href="#" class="btn btn--white">Meet the Coaches &rarr;</a>
+        </div>
+      </section>
+
+      <section class="section-book" id="section-free">
+        <div class="row">
+          <div class="book">
+            <div class="book__form">
+              <form action="#" class="form">
+                <div class="u-margin-bottom-medium">
+                  <h2 class="heading-secondary">Start Your Free Trial</h2>
+                </div>
+
+                <div class="form__group">
+                  <input
+                    type="text"
+                    class="form__input"
+                    placeholder="Full name"
+                    id="name"
+                    required
+                  />
+                  <label for="name" class="form__label">Full name</label>
+                </div>
+
+                <div class="form__group">
+                  <input
+                    type="email"
+                    class="form__input"
+                    placeholder="Email address"
+                    id="email"
+                    required
+                  />
+                  <label for="email" class="form__label">Email address</label>
+                </div>
+
+                <div class="form__group">
+                  <div class="form__radio-group">
+                    <input
+                      type="radio"
+                      class="form__radio-input"
+                      id="small"
+                      name="size"
+                    />
+                    <label for="small" class="form__radio-label">
+                      <span class="form__radio-button"></span>
+                      Beginner Level
+                    </label>
+                  </div>
+
+                  <div class="form__radio-group">
+                    <input
+                      type="radio"
+                      class="form__radio-input"
+                      id="large"
+                      name="size"
+                    />
+                    <label for="large" class="form__radio-label">
+                      <span class="form__radio-button"></span>
+                      Advanced Level
+                    </label>
+                  </div>
+                </div>
+
+                <div class="form__group">
+                  <button class="btn btn--red">Next step &rarr;</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer" id="section-contact">
+      <!-- <div class="footer__logo-box">
+          <img src="img/logo-white.png" alt="gym logo" class="footer__logo">
+        </div> -->
+
+      <div class="row">
+        <div class="col-1-of-2">
+          <div class="footer__info-box">
+            <h2 class="heading-secondary u-margin-bottom-large">
+              Come visit us soon!!!
+            </h2>
+
+            <p class="footer__info">
+              ADDRESS: 555 Broadway Avenue, Oakland, CA
+            </p>
+            <p class="footer__info">PHONE: (510) 555-5555</p>
+            <p class="footer__info">HOURS: 10am - 10pm everyday</p>
+          </div>
+
+          <div class="footer__navigation">
+            <ul class="footer__list">
+              <li class="footer__item">
+                <a href="#section-header" class="footer__link">Home</a>
+              </li>
+              <li class="footer__item">
+                <a href="#section-classes" class="footer__link">classes</a>
+              </li>
+              <li class="footer__item">
+                <a href="#section-membership" class="footer__link"
+                  >Memberships</a
+                >
+              </li>
+              <li class="footer__item">
+                <a href="#section-free" class="footer__link">Free Trial</a>
+              </li>
+              <li class="footer__item">
+                <a href="#section-contact" class="footer__link">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-1-of-2">
+          <div class="footer__map">
+            <div class="mapouter">
+              <div class="gmap_canvas">
+                <iframe
+                  width="400"
+                  height="400"
+                  id="gmap_canvas"
+                  src="https://maps.google.com/maps?q=oakland&t=&z=13&ie=UTF8&iwloc=&output=embed"
+                  frameborder="0"
+                  scrolling="no"
+                  marginheight="0"
+                  marginwidth="0"
+                ></iframe
+                ><a href="https://www.maps-erstellen.de">maps-erstellen.de</a>
+              </div>
+              <style>
+                .mapouter {
+                  text-align: right;
+                  height: 400px;
+                  width: 400px;
+                }
+                .gmap_canvas {
+                  overflow: hidden;
+                  background: none !important;
+                  height: 400px;
+                  width: 400px;
+                }
+              </style>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- <section class="grid-test">
         <div class="row">
           <div class="col-1-of-2">
             Col 1 of 2
@@ -484,5 +591,5 @@
           </div>
         </div>
       </section> -->
-    </body>
+  </body>
 </html>
